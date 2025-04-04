@@ -2,43 +2,207 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 body {
+    transition: background-color 0.5s ease;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-y: auto;
+    /* Scroll vertical sempre habilitado */
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #d4d4d4;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #7c7c7c;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+.hidden {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+    /* Impede interação */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tela-inicial {
     display: flex;
-    justify-content: center;
+    margin-top: 100px;
+    flex-direction: column;
+    /* Empilha os elementos */
     align-items: center;
+    /* Centraliza tudo */
+    justify-content: center;
     height: 100vh;
-    overflow: hidden;
-    position: relative; /* Necessário para o ::before funcionar corretamente */
-    transition: background-color 0.5s ease;
+    /* Dá altura à tela */
+    text-align: center;
+    padding: 1%;
+    background-color: #ebebeb;
 }
 
-.tela-central-fotos {
-    display: none;
-    position: fixed;
-    transform: translate(-50%, -50%);
+.texto-entrada {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 2px;
+    /* espaça 2 pixels entre as letras */
+}
+
+.texto-entrada h1,
+p {
+    font-weight: 300;
+    /* Bem fininho */
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.texto-entrada h1 {
+    font-weight: 300;
+    /* Bem fininho */
+    font-size: 40px;
+}
+
+.texto-entrada p {
+    font-size: 15px;
+    /* ou 24px, 18px... ajusta conforme quiser */
+}
+
+.button-tela-inicial button {
+    display: flex;
+    /* Garante que o botão seja visível */
+    margin-top: 20px;
+    text-align: center;
+    padding: 15px 40px;
+    /* Aumenta o espaço interno (altura e largura) */
+    font-size: 20px;
+    /* Aumenta o tamanho do texto */
+    background-color: rgb(26, 188, 156);
+    /* Cor azul */
+    color: white;
+    /* Texto branco */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagens-inicio {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+
+}
+
+
+
+
+
+.menu-topo {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens */
+    align-items: center;
     padding: 20px;
-}
-.tela-central-fotos img {
-    width: 100px; /* Ajuste conforme necessário */
-    height: auto;
-    margin: 10px;
+    margin-bottom: 180px;
 }
 
-body::before {
-    content: "";
-    position: absolute;
-    width: 120%;
-    height: 120%;
-    top: -10%;
-    left: -10%;
-    background: var(--fundo-animado, linear-gradient(135deg, #3A1C71, #D76D77, #FFAF7B));
-    backdrop-filter: blur(80px);
-    filter: saturate(180%);
-    transition: background-color 0.5s ease;
+.titulo {
+    display: flex;
+    font-size: 30px;
+    margin-right: 400px;
+    white-space: nowrap; /* Impede a quebra de linha */
+    cursor: pointer;
 }
+
+.lista-botoes {
+    display: flex;
+    gap: 40px;
+    margin-right: 20px;
+    background-color: white;
+    white-space: nowrap;
+}   
+
+.lista-botoes button {
+
+    border: none;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.lista-botoes button:hover {
+    
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+
+}
+
+.grupo-final {
+    display: flex;
+    white-space: nowrap; /* Impede que o texto quebre a linha */
+
+}
+
+.grupo-final button {
+    border: solid;
+    border: 0.5px solid black; /* Borda mais fina */
+    padding: 6px 30px;
+    cursor: pointer;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .login-tela {
     position: fixed;
     background: rgba(255, 255, 255, 0.1);
@@ -48,13 +212,14 @@ body::before {
     text-align: center;
     width: 300px;
 
-    background: rgba(255, 255, 255, 0.15); 
+    background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(20px) brightness(120%) saturate(150%);
     -webkit-backdrop-filter: blur(20px) brightness(120%) saturate(150%);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: Arial, sans-serif;
 }
 
-.login-tela img{
+.login-tela img {
 
     width: 65%;
     border-radius: 50%;
@@ -71,6 +236,7 @@ body::before {
     margin-bottom: 15px;
 
 }
+
 .input-groupo input {
     width: 100%;
     padding: 10px;
@@ -81,6 +247,7 @@ body::before {
     outline: none;
     font-size: 16px;
 }
+
 .input-groupo label {
     position: absolute;
     top: 50%;
@@ -93,8 +260,8 @@ body::before {
 }
 
 
-.input-groupo input:focus + label, 
-.input-groupo input:not(:placeholder-shown) + label {
+.input-groupo input:focus+label,
+.input-groupo input:not(:placeholder-shown)+label {
     top: 5px;
     font-size: 12px;
 }
@@ -106,6 +273,7 @@ body::before {
     font-size: 12px;
     color: white;
 }
+
 .entrar {
     width: 100%;
     padding: 10px;
@@ -126,8 +294,10 @@ body::before {
 }
 
 .entrar:active {
-    transform: scale(0.95); /* Diminuir o tamanho para dar um efeito de "clicado" */
-    box-shadow: 0 0 15px rgb(255, 255, 255); /* Efeito de sombra */
+    transform: scale(0.95);
+    /* Diminuir o tamanho para dar um efeito de "clicado" */
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    /* Efeito de sombra */
 }
 
 .registrar {
@@ -156,8 +326,10 @@ body::before {
 }
 
 .registrar:active {
-    transform: scale(0.95); /* Diminuir o tamanho para dar um efeito de "clicado" */
-    box-shadow: 0 0 15px rgb(255, 255, 255); /* Efeito de sombra */
+    transform: scale(0.95);
+    /* Diminuir o tamanho para dar um efeito de "clicado" */
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    /* Efeito de sombra */
 }
 
 
@@ -171,7 +343,6 @@ body::before {
 /*tela de cadastrar */
 
 .tela-cadastro {
-    display: none; 
     position: fixed;
     background: rgba(255, 255, 255, 0.1);
     padding: 30px;
@@ -183,19 +354,16 @@ body::before {
     left: 50%;
     transform: translate(-50%, -50%);
     backdrop-filter: blur(20px);
-
+    font-family: Arial, sans-serif;
     background: rgba(255, 255, 255, 0.1);
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 300px;
-
-    background: rgba(255, 255, 255, 0.15); 
     backdrop-filter: blur(20px) brightness(120%) saturate(150%);
     -webkit-backdrop-filter: blur(20px) brightness(120%) saturate(150%);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    
 }
 
 .tela-cadastro h2 {
@@ -208,6 +376,7 @@ body::before {
     position: relative;
     margin-bottom: 15px;
 }
+
 .input-groupo-registro input {
     width: 100%;
     padding: 10px;
@@ -218,6 +387,7 @@ body::before {
     outline: none;
     font-size: 16px;
 }
+
 .input-groupo-registro label {
     position: absolute;
     top: 50%;
@@ -229,8 +399,8 @@ body::before {
     transition: 0.3s;
 }
 
-.input-groupo-registro input:focus + label, 
-.input-groupo-registro input:not(:placeholder-shown) + label {
+.input-groupo-registro input:focus+label,
+.input-groupo-registro input:not(:placeholder-shown)+label {
     top: 5px;
     font-size: 12px;
     color: white;
@@ -298,3 +468,45 @@ body::before {
 
 
 
+.tela-central-fotos {
+    display: flex;
+    /* Ativa o Flexbox */
+    flex-wrap: wrap;
+    /* Permite que as imagens quebrem de linha se necessário */
+    justify-content: center;
+    /* Centraliza as imagens horizontalmente */
+    align-items: center;
+    /* Centraliza as imagens verticalmente */
+    position: fixed;
+    /* Mantém sempre centralizado */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 300px;
+    /* Faz o container ocupar a tela toda */
+
+    overflow-y: scroll;
+    /* Sempre exibe a barra de rolagem */
+    overflow-x: hidden;
+    /* Impede rolagem lateral */
+    max-height: 80vh;
+    /* Em vez de height fixa, um limite */
+    align-items: flex-start;
+    /* 🟢 Alinha as imagens no topo */
+}
+
+.tela-central-fotos img {
+    display: flex;
+    margin: 30px;
+    border-radius: 10px;
+    top: 500px;
+    width: auto;
+    height: auto;
+    max-width: 200px;
+    max-height: 100%;
+}
+
+.tela-central-fotos img:hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(2);
+}

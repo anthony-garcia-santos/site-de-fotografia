@@ -1,34 +1,44 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let telaLogin = document.querySelector(".login-tela");
-    let telaRegistro = document.querySelector(".tela-cadastro");
-    let Registrar = document.querySelector(".registrar");
-    let Voltar = document.querySelector(".voltar");
-    let entrar = document.querySelector(".entrar");
-    let elemento = document.querySelector(".tela-central-fotos");
+    const telaLogin = document.querySelector(".login-tela");
+    const telaRegistro = document.querySelector(".tela-cadastro");
+    const registrar = document.querySelector(".registrar");
+    const voltar = document.querySelector(".voltar");
+    const entrar = document.querySelector(".entrar");
+    const fotos = document.querySelector(".tela-central-fotos");
+
+    function esconder(elemento) {
+        elemento.classList.add("hidden");
+    }
+
+    function mostrar(elemento) {
+        setTimeout(() => {
+
+            elemento.classList.remove("hidden");
 
 
 
-    Registrar.addEventListener("click", function() {
-        telaLogin.style.display = "none";
-        elemento.style.display = "none";
-        telaRegistro.style.display = "block";
+        }, 300);
+    }
 
+    registrar.addEventListener("click", () => {
+        esconder(telaLogin);
+        esconder(fotos);
+        mostrar(telaRegistro);
     });
 
-    Voltar.addEventListener("click", function() {
-
-        telaRegistro.style.display = "none";
-        elemento.style.display = "none";
-        telaLogin.style.display = "block";
+    voltar.addEventListener("click", () => {
+        esconder(telaRegistro);
+        esconder(fotos);
+        mostrar(telaLogin);
     });
 
-    entrar.addEventListener("click", function(){
-        telaRegistro.style.display = "none";
-        telaLogin.style.display = "none";
-        elemento.style.display = "block";
+    entrar.addEventListener("click", () => {
+        esconder(telaRegistro);
+        esconder(telaLogin);
+        mostrar(fotos);
         document.body.style.setProperty(
-            "--fundo-animado", 
-            "linear-gradient(135deg,rgb(101, 0, 216),rgb(0, 174, 255),rgb(255, 0, 255))"
-        );         
+            "--fundo-animado",
+            "linear-gradient(135deg,rgb(34, 0, 73),rgb(37, 37, 37),rgb(104, 0, 104))"
+        );
     });
 });

@@ -1,0 +1,114 @@
+.tela-cadastro {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(20px);
+    font-family: Arial, sans-serif;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    backdrop-filter: blur(20px) brightness(120%) saturate(150%);
+    -webkit-backdrop-filter: blur(20px) brightness(120%) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tela-cadastro h2 {
+    margin-bottom: 10%;
+    color: white;
+}
+
+
+.input-groupo-registro {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-groupo-registro input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    color: white;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-groupo-registro label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 17px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-groupo-registro input:focus+label,
+.input-groupo-registro input:not(:placeholder-shown)+label {
+    top: 5px;
+    font-size: 12px;
+    color: white;
+}
+
+
+.voltar {
+    width: 80%;
+    padding: 12px;
+    border: none;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.voltar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.voltar:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.registrar-se {
+    width: 80%;
+    padding: 12px;
+    border: none;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.registrar-se:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.registrar-se:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}

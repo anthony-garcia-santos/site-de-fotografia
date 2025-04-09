@@ -1,9 +1,12 @@
+.hidden {
+    display: none !important;
+}
+
 .tela-cadastro {
     position: fixed;
     background: rgba(255, 255, 255, 0.1);
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 300px;
     top: 50%;
@@ -11,17 +14,12 @@
     transform: translate(-50%, -50%);
     backdrop-filter: blur(20px);
     font-family: Arial, sans-serif;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgb(0, 0, 0);
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 300px;
-    backdrop-filter: blur(20px) brightness(120%) saturate(150%);
-    -webkit-backdrop-filter: blur(20px) brightness(120%) saturate(150%);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 300p;
 }
-
 .tela-cadastro h2 {
     margin-bottom: 10%;
     color: white;

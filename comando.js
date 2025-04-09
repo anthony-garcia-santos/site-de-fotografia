@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const fotos = document.querySelector(".tela-central-fotos");
     const comecar = document.querySelector(".comecar");
     const telainicial = document.querySelector(".tela-inicial");
-
+    
     function esconder(elemento) {
         elemento.classList.add("hidden");
     }
@@ -62,10 +62,18 @@ document.addEventListener("DOMContentLoaded", function () {
         esconder(telaLogin);
         esconder(telainicial)
         mostrar(fotos);
-        document.body.style.setProperty(
-            "--fundo-animado",
-            "linear-gradient(135deg,rgb(34, 0, 73),rgb(37, 37, 37),rgb(104, 0, 104))"
-        );
     });
+    function registrando(){
 
+
+        const passw = document.getElementById("regpassword").value;
+        const usuario = document.getElementById("regUsername").value;
+
+        if(usuario,passw) {
+
+
+
+        
+        }
+    }
 });

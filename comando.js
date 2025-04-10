@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
     comecar.addEventListener("click", () => {
 
         mostrar(telaLogin);
@@ -75,6 +74,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
             
             
-        }
-    }
+    }};
 });

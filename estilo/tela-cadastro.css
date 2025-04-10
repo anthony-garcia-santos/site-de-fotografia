@@ -4,26 +4,45 @@
 
 .tela-cadastro {
     position: fixed;
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgb(255, 255, 255);
     padding: 30px;
-    border-radius: 15px;
     text-align: center;
-    width: 300px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    backdrop-filter: blur(20px);
     font-family: Arial, sans-serif;
-    background: rgb(0, 0, 0);
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
     width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* sombra suave */
+
 }
+
 .tela-cadastro h2 {
     margin-bottom: 10%;
     color: white;
 }
+
+.imagem-cadastro {
+
+    display: flex;
+    justify-content: center;
+}
+.imagem-cadastro img {
+    display: flex;
+    width: 65%;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.imagem-cadastro img:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
 
 
 .input-groupo-registro {
@@ -32,13 +51,10 @@
 }
 
 .input-groupo-registro input {
+    border: none;
     width: 100%;
     padding: 10px;
-    border: none;
-    border-bottom: 2px solid white;
-    background: transparent;
-    color: white;
-    outline: none;
+    background-color: rgb(145, 142, 142);
     font-size: 16px;
 }
 
@@ -47,66 +63,73 @@
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 17px;
     pointer-events: none;
-    transition: 0.3s;
 }
 
-.input-groupo-registro input:focus+label,
-.input-groupo-registro input:not(:placeholder-shown)+label {
-    top: 5px;
-    font-size: 12px;
-    color: white;
+.input-groupo-registro input:focus+label {
+    opacity: 0;
 }
+
 
 
 .voltar {
-    width: 80%;
-    padding: 12px;
+    display: flex;
+    width: 100%;
+    padding: 10px;
     border: none;
-    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    background-color: rgb(26, 188, 156);
     color: white;
     border-radius: 25px;
     font-size: 16px;
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .voltar:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 10px rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 .voltar:active {
     transform: scale(0.95);
-    box-shadow: 0 0 10px rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 .registrar-se {
-    width: 80%;
-    padding: 12px;
+    display: flex;
+    width: 100%;
+    padding: 10px;
     border: none;
-    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    background-color: rgb(26, 188, 156);
     color: white;
     border-radius: 25px;
     font-size: 16px;
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .registrar-se:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 10px rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 .registrar-se:active {
     transform: scale(0.95);
-    box-shadow: 0 0 10px rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
 }

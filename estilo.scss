@@ -129,7 +129,7 @@ body {
   .titulo {
     display: flex;
     font-size: 30px;
-    margin-right: 400px;
+    margin-right: 350px;
     white-space: nowrap;
     cursor: pointer;
   }
@@ -193,125 +193,140 @@ body {
 
 // Responsividade
 
+
+
 @media (max-width: 1024px) {
+
+  // título topo
+
   .menu-topo {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-  }
-  .menu-topo .titulo {
-    margin-right: 0;
-    font-size: 26px;
-  }
-  .menu-topo .lista-botoes {
-    gap: 20px;
-  }
-  .menu-topo .grupo-final {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .tela-inicial .texto-entrada h1, .tela-inicial .texto-entrada p {
-    font-size: 30px;
-    top: -100px;
-  }
-  .tela-inicial .texto-entrada p {
-    font-size: 14px;
-  }
-  .tela-inicial .button-tela-inicial button {
-    width: 180px;
-    height: 50px;
-    font-size: 18px;
-    top: -70px;
-  }
-  .tela-inicial .imagen-inicio img {
-    max-width: 90%;
-    height: auto;
-    top: -80px;
-  }
-  .tela-debaixo {
-    padding: 0 10px;
-  }
-  .tela-debaixo h1 {
-    font-size: 24px;
-  }
-}
-@media (max-width: 600px) {
-  .menu-topo .titulo {
-    font-size: 22px;
-  }
-  .menu-topo .lista-botoes {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
-  .menu-topo .grupo-final button {
-    padding: 6px 20px;
-    font-size: 14px;
-  }
-  .tela-inicial {
-    margin-top: 50px;
-  }
-  .tela-inicial .texto-entrada h1 {
-    font-size: 24px;
-  }
-  .tela-inicial .texto-entrada p {
-    font-size: 13px;
-  }
-  .tela-inicial .button-tela-inicial button {
-    width: 160px;
-    height: 45px;
-    font-size: 16px;
-  }
-  .tela-inicial .imagen-inicio img {
-    top: -60px;
-  }
-  .tela-debaixo {
-    flex-direction: column;
-    height: auto;
-    padding: 20px 10px;
-  }
-  .tela-debaixo h1 {
-    font-size: 20px;
-  }
-}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 600px) {
-  .menu-topo {
     .titulo {
       font-size: 22px;
+      margin: 0px;
+      margin-top: -450px;
+      order: 0; // garante que vem primeiro
     }
 
     .lista-botoes {
-      flex-direction: column;
-      gap: 10px;
+      gap: 100px;
       align-items: center;
+      margin-top: -250px;
     }
 
     .grupo-final button {
+      position: relative;
       padding: 6px 20px;
       font-size: 14px;
+      top: -250px;
     }
   }
 
+
+  // tela de cima com imagem e botão
+
   .tela-inicial {
-    margin-top: 50px;
+    margin-top: 250px;
+    height: 200vh;
+
+
 
     .texto-entrada {
       h1 {
+        font-size: 30px;
+        top: -440px;
+      }
+
+      p {
+        font-size: 14px;
+        top: -450px;
+      }
+    }
+
+    .button-tela-inicial button {
+      width: 180px;
+      height: 50px;
+      font-size: 18px;
+      top: -400px;
+    }
+
+    .imagen-inicio img {
+      max-width: 90%;
+      height: auto;
+      top: -330px;
+    }
+  }
+
+
+  // tela debaixo com fundo cinza
+
+  .tela-debaixo {
+    padding: 0 10px;
+
+    h1 {
+      font-size: 24px;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+  //titulo topo
+
+
+  .menu-topo {
+    .titulo {
+      font-size: 22px;
+      margin: 100px;
+      margin-top: -490px;
+    }
+
+    .lista-botoes {
+      gap: 50px;
+      align-items: center;
+      margin-top: -400px;
+    }
+    
+
+    .grupo-final button {
+      position: relative;
+      padding: 6px 20px;
+      font-size: 14px;
+      top: -299px;
+    }
+  }
+
+
+
+  //tela debaixo com fundo cinza
+
+  .tela-inicial {
+    margin-top: 250px;
+    height: 200vh;
+
+
+    .texto-entrada {
+      h1 {
+        margin-top: -5px;
         font-size: 24px;
       }
 
@@ -321,13 +336,15 @@ body {
     }
 
     .button-tela-inicial button {
-      width: 160px;
-      height: 45px;
+      position: relative;
+      top: -260px;
+      width: 260px;
+      height: 65px;
       font-size: 16px;
     }
 
     .imagen-inicio img {
-      top: -60px;
+      top: -100px;
     }
   }
 

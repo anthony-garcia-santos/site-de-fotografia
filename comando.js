@@ -1,78 +1,34 @@
 document.addEventListener("DOMContentLoaded", function () {
     const telaLogin = document.querySelector(".login-tela");
     const telaRegistro = document.querySelector(".tela-cadastro");
+    const fotos = document.querySelector(".tela-central-fotos");
+    const telainicial = document.querySelector(".tela-inicial");
     const registrar = document.querySelector(".registrar");
     const voltar = document.querySelector(".voltar");
     const entrar = document.querySelector(".entrar");
-    const fotos = document.querySelector(".tela-central-fotos");
     const comecar = document.querySelector(".comecar");
-    const telainicial = document.querySelector(".tela-inicial");
-    
-    function esconder(elemento) {
-        elemento.classList.add("hidden");
+    const home = document.querySelector(".HOME");
+    const conectarse = document.querySelector(".CONECTE-SE");
+    const increverse = document.querySelector(".INSCREVER-SE");
+
+    const telas = [telaLogin, telaRegistro, fotos, telainicial];
+
+    function esconderTodas() {
+        telas.forEach(tela => tela.classList.add("hidden"));
     }
 
-    function mostrar(elemento) {
+    function mostrar(tela) {
+        esconderTodas();
         setTimeout(() => {
-
-            elemento.classList.remove("hidden");
-
-
-
+            tela.classList.remove("hidden");
         }, 300);
     }
 
-
-
-    comecar.addEventListener("click", () => {
-
-        mostrar(telaLogin);
-        esconder(fotos);
-        esconder(telainicial);
-        esconder(telaRegistro);
-
-    });
-
-
-
-
-
-
-
-
-
-
-    registrar.addEventListener("click", () => {
-        esconder(telaLogin);
-        esconder(fotos);
-        esconder(telainicial);
-        mostrar(telaRegistro);
-    });
-
-    voltar.addEventListener("click", () => {
-        esconder(telaRegistro);
-        esconder(fotos);
-        esconder(telainicial);
-        mostrar(telaLogin);
-    });
-
-    entrar.addEventListener("click", () => {
-        esconder(telaRegistro);
-        esconder(telaLogin);
-        esconder(telainicial)
-        mostrar(fotos);
-    });
-    function registrando(){
-
-
-        const passw = document.getElementById("regpassword").value;
-        const usuario = document.getElementById("regUsername").value;
-
-        if(usuario,passw) {
-
-            
-
-            
-            
-    }};
+    comecar.addEventListener("click", () => mostrar(telaLogin));
+    registrar.addEventListener("click", () => mostrar(telaRegistro));
+    voltar.addEventListener("click", () => mostrar(telaLogin));
+    entrar.addEventListener("click", () => mostrar(fotos));
+    home.addEventListener("click", () => mostrar(telainicial));
+    conectarse.addEventListener("click", () => mostrar(telaLogin));
+    increverse.addEventListener("click", () => mostrar(telaRegistro));
 });

@@ -39,10 +39,11 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: center;
   justify-content: center;
   margin-top: 100px;
-  height: 100vh;
+  min-height: 600px;
   text-align: center;
   padding: 1%;
   background-color: #ebebeb;
+  gap: 150px;
 }
 .tela-inicial .texto-entrada {
   font-family: "Montserrat", sans-serif;
@@ -69,7 +70,7 @@ body::-webkit-scrollbar-thumb:hover {
   justify-content: center;
   width: 200px;
   height: 60px;
-  margin-top: 20px;
+  margin-top: -100px;
   padding: 15px 40px;
   text-align: center;
   font-size: 20px;
@@ -91,40 +92,22 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .tela-inicial .imagen-inicio img {
   position: relative;
-  top: -100px;
+  top: -250px;
 }
 
 .menu-topo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  margin-bottom: 180px;
+  padding: 30px 20px; /* menor, pra subir mais */
+  margin-top: -113px;
 }
 .menu-topo .titulo {
   display: flex;
   font-size: 30px;
-  margin-right: 350px;
+  margin-right: 650px;
   white-space: nowrap;
   cursor: pointer;
-}
-.menu-topo .lista-botoes {
-  display: flex;
-  gap: 40px;
-  margin-right: 20px;
-  background-color: white;
-  white-space: nowrap;
-}
-.menu-topo .lista-botoes button {
-  border: none;
-  background-color: white;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  white-space: nowrap;
-}
-.menu-topo .lista-botoes button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 10px white;
 }
 .menu-topo .grupo-final {
   display: flex;
@@ -135,6 +118,12 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 6px 30px;
   cursor: pointer;
   background-color: white;
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.4s ease, background-color 0.3s ease;
+}
+.menu-topo .grupo-final button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  background-color: rgb(20, 160, 130);
 }
 
 .tela-debaixo {
@@ -157,44 +146,39 @@ body::-webkit-scrollbar-thumb:hover {
     gap: 20px;
   }
   .menu-topo .titulo {
-    font-size: 22px;
+    font-size: 35px;
     margin: 0px;
-    margin-top: -450px;
+    margin-top: -150px;
     order: 0;
-  }
-  .menu-topo .lista-botoes {
-    gap: 100px;
-    align-items: center;
-    margin-top: -250px;
   }
   .menu-topo .grupo-final button {
     position: relative;
     padding: 6px 20px;
     font-size: 14px;
-    top: -250px;
+    top: -50px;
   }
   .tela-inicial {
-    margin-top: 250px;
-    height: 200vh;
+    margin-top: 150px;
+    min-height: 1000px;
   }
   .tela-inicial .texto-entrada h1 {
     font-size: 30px;
-    top: -440px;
+    top: -240px;
   }
   .tela-inicial .texto-entrada p {
     font-size: 14px;
-    top: -450px;
+    top: -270px;
   }
   .tela-inicial .button-tela-inicial button {
     width: 180px;
     height: 50px;
     font-size: 18px;
-    top: -400px;
+    top: -310px;
   }
   .tela-inicial .imagen-inicio img {
     max-width: 90%;
     height: auto;
-    top: -330px;
+    top: -500px;
   }
   .tela-debaixo {
     padding: 0 10px;
@@ -205,23 +189,18 @@ body::-webkit-scrollbar-thumb:hover {
 }
 @media (max-width: 600px) {
   .menu-topo .titulo {
-    font-size: 22px;
+    font-size: 35px;
     margin: 100px;
-    margin-top: -490px;
-  }
-  .menu-topo .lista-botoes {
-    gap: 50px;
-    align-items: center;
-    margin-top: -400px;
+    margin-top: -250px;
   }
   .menu-topo .grupo-final button {
     position: relative;
     padding: 6px 20px;
     font-size: 14px;
-    top: -299px;
+    top: -160px;
   }
   .tela-inicial {
-    margin-top: 250px;
+    margin-top: 120px;
     height: 200vh;
   }
   .tela-inicial .texto-entrada h1 {
@@ -239,7 +218,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 16px;
   }
   .tela-inicial .imagen-inicio img {
-    top: -100px;
+    top: -450px;
   }
   .tela-debaixo {
     flex-direction: column;

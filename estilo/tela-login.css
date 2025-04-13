@@ -107,8 +107,6 @@
     cursor: pointer;
     margin-top: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -121,6 +119,34 @@
 }
 
 .registrar:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
+.HOME {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: rgb(26, 188, 156);
+    color: white;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.HOME:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.HOME:active {
     transform: scale(0.95);
     box-shadow: 0 0 15px rgb(255, 255, 255);
 }

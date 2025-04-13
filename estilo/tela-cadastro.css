@@ -39,12 +39,6 @@
     transform: scale(1.2);
 }
 
-
-
-
-
-
-
 .input-groupo-registro {
     position: relative;
     margin-bottom: 15px;
@@ -87,7 +81,6 @@
     margin-top: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -113,11 +106,9 @@
     color: white;
     border-radius: 25px;
     font-size: 16px;
-    cursor: pointer;
     margin-top: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;

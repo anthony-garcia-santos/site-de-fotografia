@@ -9,7 +9,7 @@ JavaScript vanila
 sass
 
 git clone https://github.com/anthony-garcia-santos/site-de-fotografia.git
-cd nome-do-projeto
+cd Site-de-fotografia
 abra o arquivo index.html no navegador
 
 

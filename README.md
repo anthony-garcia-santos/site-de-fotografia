@@ -15,7 +15,6 @@ Website desenvolvido como portfólio para fotógrafos, com foco em responsividad
 
 ## 🖼️ Demonstração
 
-![Fotos e vídeos do projeto](/imagem/reatividade%20celular.jpeg)
 <img src="/imagem/reatividade%20celular.jpeg" alt="Fotos e vídeos do projeto" width="500" />
 
 

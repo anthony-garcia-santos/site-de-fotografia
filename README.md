@@ -1,72 +1,85 @@
-## 📸 Site de Fotografia
+# 📸 Site de Fotografia
 
-### 🚀 Tecnologias utilizadas:
-
-- HTML5  
-- CSS3 (vanilla)  
-- JavaScript (vanilla)  
-- Sass  
+Website desenvolvido como portfólio para fotógrafos, com foco em responsividade, interatividade e performance. Ideal para profissionais que desejam expor, compartilhar ou vender fotos e vídeos sem perda de qualidade.
 
 ---
 
-### 🖼️ Demonstração:
+## 🚀 Tecnologias Utilizadas
 
-- [📷 Fotos e vídeos do projeto](https://imgur.com/user/AnthonyGarciaSantos/posts)  
-- [🔗 Link do site ao vivo](https://anthony-garcia-santos.github.io/site-de-fotografia/)
-
----
-
-### 📌 Status do projeto:
-
-O projeto está **em andamento**. Atualmente conta com:
-
-- Hover em todos os botões  
-- Página interna (em desenvolvimento)
+- 🧱 **HTML5** – Estrutura semântica do site.
+- 🎨 **CSS3 (vanilla)** – Estilização customizada.
+- ⚙️ **JavaScript (vanilla)** – Funcionalidades e interações.
+- 💅 **Sass** – Pré-processador CSS utilizado na página inicial.
 
 ---
 
-### 🛠️ Próximas melhorias:
+## 🖼️ Demonstração
 
-- Integração com PHP e MySQL para sistema de login, registro e páginas dinâmicas  
-- Melhorias no layout e interatividade  
-
----
-
-### 📝 Detalhes técnicos:
-
-- A **página inicial** utiliza Sass, enquanto as demais usam CSS puro, demonstrando domínio em ambas as abordagens.  
-- O código JavaScript segue boas práticas e está otimizado para a navegação entre páginas.
+- 📷 [Fotos e vídeos do projeto (Imgur)](https://imgur.com/user/AnthonyGarciaSantos/posts)  
+- 🔗 [Site ao vivo](https://anthony-garcia-santos.github.io/site-de-fotografia/)
 
 ---
 
-## ⚙️ Stack 2 — FotoSpace (versão avançada)
+## 📌 Status do Projeto
 
-Estou desenvolvendo uma versão mais robusta chamada **FotoSpace**, com as seguintes tecnologias:
+🚧 **Em andamento**. Funcionalidades atuais:
 
-- React  
-- React Router  
-- PHP (backend)  
-- MySQL (banco de dados)
-
-O sistema backend está em desenvolvimento e em breve estará totalmente funcional.  
-Tanto este projeto principal quanto o Stack2 (FotoSpace) servem para demonstrar minhas habilidades e evolução como desenvolvedor fullstack.
+- ✅ Hover em todos os botões.
+- ✅ Página inicial estilizada com Sass.
+- ⚙️ Página interna em desenvolvimento.
 
 ---
 
-## 📂 Sobre o projeto
+## 🛠️ Próximas Melhorias
 
-Este site está sendo desenvolvido com foco em **portfólios de fotógrafos**, permitindo armazenar, compartilhar e vender trabalhos fotográficos e vídeos **sem perda de qualidade**.
-
-O objetivo é ajudar fotógrafos a:
-
-- Exibir seus trabalhos  
-- Atrair clientes  
-- Garantir privacidade e segurança dos dados  
-
-## 📅 **Previsão de conclusão:** dentro de 1 mês (frontend + backend).
-
-Todo o projeto está sendo desenvolvido por **mim, Anthony**, e esta versão será mantida como demonstração da minha evolução e capacidades como desenvolvedor.
+- 🔐 Integração com **PHP + MySQL** para login, registro e páginas dinâmicas.
+- 🎨 Melhorias no layout, responsividade e interatividade geral.
+- 🚀 Otimizações para carregamento mais rápido.
 
 ---
-## 🛠️ **Obs**: A barra de rolagem presente no site é proposital, pois haverá mais conteúdo nas atualizações futuras. O site está em constante desenvolvimento e está em constante atualização.
-        
+
+## 📝 Detalhes Técnicos
+
+- A **página inicial** foi construída com **Sass**, e as demais páginas usam **CSS puro**, demonstrando domínio de ambas abordagens de estilização.
+- O **JavaScript** segue boas práticas, com código limpo e voltado para uma navegação mais fluida.
+
+---
+
+# ⚙️ Stack2 — FotoSpace (Versão Avançada)
+
+📦 Versão robusta do site chamada **FotoSpace**, com foco em aplicação fullstack, utilizando:
+
+- ⚛️ React + React Router (SPA)
+- 🐘 PHP (backend)
+- 🛢️ MySQL (banco de dados)
+
+Atualmente, o sistema back-end está em construção. A proposta é oferecer uma experiência mais dinâmica, escalável e profissional para fotógrafos.
+
+Tanto o **Stack1** quanto o **FotoSpace (Stack2)** mostram minha evolução como **desenvolvedor fullstack**.
+
+---
+
+## 📂 Sobre o Projeto
+
+Plataforma para fotógrafos com o objetivo de:
+
+- 🖼️ **Exibir portfólios com qualidade total**
+- 🧲 **Atrair novos clientes**
+- 🔒 **Manter segurança e privacidade dos dados**
+
+---
+
+## 📅 Previsão de Conclusão
+
+🗓️ **Frontend + Backend** prontos em até **1 mês**.
+
+> Todo o desenvolvimento está sendo feito por **mim, Anthony**, como uma vitrine da minha evolução técnica e dedicação como programador.
+
+---
+
+## 🛠️ Observações
+
+> ℹ️ A **barra de rolagem** atual do site é **proposital**, pois haverá mais conteúdo em versões futuras.  
+> O site está em constante evolução, com **novas funcionalidades e melhorias contínuas**.
+
+---

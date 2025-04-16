@@ -68,5 +68,5 @@ O objetivo é ajudar fotógrafos a:
 Todo o projeto está sendo desenvolvido por **mim, Anthony**, e esta versão será mantida como demonstração da minha evolução e capacidades como desenvolvedor.
 
 ---
-## 🛠️ **Obs**: O site está em desenvolvimento. A barra de rolagem é proposital, pois haverá mais conteúdo nas próximas seções.
-
+## 🛠️ **Obs**: A barra de rolagem presente no site é proposital, pois haverá mais conteúdo nas atualizações futuras. O site está em constante desenvolvimento e está em constante atualização.
+        

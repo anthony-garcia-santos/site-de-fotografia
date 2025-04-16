@@ -1,52 +1,68 @@
-🚀 Tecnologias usadas:
+## 📸 Site de Fotografia
 
-HTML5
+### 🚀 Tecnologias utilizadas:
 
-CSS3 vanila
+- HTML5  
+- CSS3 (vanilla)  
+- JavaScript (vanilla)  
+- Sass  
 
-JavaScript vanila
+---
 
-sass
+### 🖼️ Demonstração:
 
-git clone https://github.com/anthony-garcia-santos/site-de-fotografia.git
-cd Site-de-fotografia
-abra o arquivo index.html no navegador
+- [📷 Fotos e vídeos do projeto](https://imgur.com/user/AnthonyGarciaSantos/posts)  
+- [🔗 Link do site ao vivo](https://anthony-garcia-santos.github.io/site-de-fotografia/)
 
+---
 
-![Demonstração do projeto fotos e videos]  (https://imgur.com/user/AnthonyGarciaSantos/posts)
+### 📌 Status do projeto:
 
+O projeto está **em andamento**. Atualmente conta com:
 
+- Hover em todos os botões  
+- Página interna (em desenvolvimento)
 
-📌 Status do projeto:
-O projeto está em andamento.
-Atualmente conta com:
+---
 
-Hover em todos os botões
+### 🛠️ Próximas melhorias:
 
-Página interna (inacabada devido a testes anteriores, mas em desenvolvimento)
+- Integração com PHP e MySQL para sistema de login, registro e páginas dinâmicas  
+- Melhorias no layout e interatividade  
 
-🛠️ Próximas melhorias:
-Integração com PHP e MySQL para sistema de login, registro e páginas dinâmicas
+---
 
-Melhorias de layout e interatividade
+### 📝 Detalhes técnicos:
 
-📝 Detalhes técnicos:
-A página inicial utiliza Sass, enquanto o restante usa CSS puro, demonstrando domínio em ambas as abordagens.
+- A **página inicial** utiliza Sass, enquanto as demais usam CSS puro, demonstrando domínio em ambas as abordagens.  
+- O código JavaScript segue boas práticas e está otimizado para a navegação entre páginas.
 
-O código JavaScript segue boas práticas e está otimizado para a navegação entre telas.
+---
 
-🖥️ Stack2 — FotoSpace:
-Estou desenvolvendo uma versão avançada chamada FotoSpace, utilizando:
+## ⚙️ Stack 2 — FotoSpace (versão avançada)
 
-React
+Estou desenvolvendo uma versão mais robusta chamada **FotoSpace**, com as seguintes tecnologias:
 
-React Router
+- React  
+- React Router  
+- PHP (backend)  
+- MySQL (banco de dados)
 
-PHP (backend)
+O sistema backend está em desenvolvimento e em breve estará totalmente funcional.  
+Tanto este projeto principal quanto o Stack2 (FotoSpace) servem para demonstrar minhas habilidades e evolução como desenvolvedor fullstack.
 
-MySQL (banco de dados)
+---
 
-Em breve o sistema de backend estará totalmente implementado e funcional.
-tanto no Stack2 quanto nesse projeto primario para demonstrar minhas abilidades.  
+## 📂 Sobre o projeto
 
-mas detalhes sobre esse projeto com react no Stack2-FotoSpace
+Este site está sendo desenvolvido com foco em **portfólios de fotógrafos**, permitindo armazenar, compartilhar e vender trabalhos fotográficos e vídeos **sem perda de qualidade**.
+
+O objetivo é ajudar fotógrafos a:
+
+- Exibir seus trabalhos  
+- Atrair clientes  
+- Garantir privacidade e segurança dos dados  
+
+📅 **Previsão de conclusão:** dentro de 1 mês (frontend + backend).
+
+Todo o projeto está sendo desenvolvido por **mim, Anthony**, e esta versão será mantida como demonstração da minha evolução e capacidades como desenvolvedor.

@@ -379,3 +379,71 @@ body {
     }
   }
 }
+
+
+
+
+
+@media (max-width: 432px) {
+
+
+  .menu-topo {
+    .titulo {
+      font-size: 35px;
+      margin: 100px;
+      margin-top: -50px;
+    }
+
+    .grupo-final button {
+      position: relative;
+      padding: 6px 20px;
+      font-size: 14px;
+      top: -110px;
+    }
+  }
+
+
+
+  //tela debaixo com fundo cinza
+
+  .tela-inicial {
+    margin-top: 120px;
+    height: 10vh;
+
+
+    .texto-entrada {
+      h1 {
+        margin-top: 50px;
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+    }
+
+    .button-tela-inicial button {
+      position: relative;
+      top: -260px;
+      width: 260px;
+      height: 65px;
+      font-size: 16px;
+    }
+
+    .imagen-inicio img {
+      top: -450px;
+    }
+  }
+
+  .tela-debaixo {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 10px;
+
+    h1 {
+      font-size: 20px;
+    }
+  }
+}
+
+

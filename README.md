@@ -13,7 +13,7 @@ cd nome-do-projeto
 abra o arquivo index.html no navegador
 
 
-![Demonstração do projeto fotos e videos](https://imgur.com/21imSZH)
+![Demonstração do projeto fotos e videos]  (https://imgur.com/21imSZH)
 
 
 

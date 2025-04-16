@@ -15,14 +15,16 @@ Website desenvolvido como portfólio para fotógrafos, com foco em responsividad
 
 ## 🖼️ Demonstração
 
-<img src="/imagem/reatividade%20celular.jpeg" alt="Fotos e vídeos do projeto" width="500" />
+<img src="/imagem/reatividade%20celular.jpeg" alt="Fotos e vídeos do projeto" width="100" />
+
+
+<img src=""
 
 
 
 
-
-
-
+---
+## ▶️ Para entrar dentro do site
 
 
 - 🔗 [Site ao vivo](https://anthony-garcia-santos.github.io/site-de-fotografia/)

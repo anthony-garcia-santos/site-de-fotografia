@@ -17,34 +17,6 @@ $font-main: "Montserrat", sans-serif;
   display: none !important;
 }
 
-html,
-body {
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
-
-body {
-  transition: background-color 0.5s ease;
-
-  &::-webkit-scrollbar {
-    width: 7px;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: $scroll-track;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: $scroll-thumb;
-    border-radius: 5px;
-
-    &:hover {
-      background-color: $scroll-thumb-hover;
-    }
-  }
-}
 
 
 
@@ -61,7 +33,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 100px;
-  min-height: 600px;
+  min-height: 510px;
   text-align: center;
   padding: 1%;
   background-color: #ebebeb;
@@ -240,7 +212,7 @@ body {
     .titulo {
       font-size: 35px;
       margin: 0px;
-      margin-top: -150px;
+      margin-top: -270px;
       order: 0; // garante que vem primeiro
     }
 
@@ -249,7 +221,7 @@ body {
       position: relative;
       padding: 6px 20px;
       font-size: 14px;
-      top: -50px;
+      top: -180px;
     }
   }
 
@@ -258,19 +230,19 @@ body {
 
   .tela-inicial {
     margin-top: 150px;
-    min-height: 1000px;
+    min-height: 888px;
 
 
 
     .texto-entrada {
       h1 {
         font-size: 30px;
-        top: -240px;
+        top: -220px;
       }
 
       p {
         font-size: 14px;
-        top: -270px;
+        top: -240px;
       }
     }
 
@@ -278,7 +250,7 @@ body {
       width: 180px;
       height: 50px;
       font-size: 18px;
-      top: -310px;
+      top: -210px;
     }
 
     .imagen-inicio img {
@@ -390,15 +362,15 @@ body {
   .menu-topo {
     .titulo {
       font-size: 35px;
-      margin: 100px;
-      margin-top: -50px;
+      margin: 450px;
+      margin-top: -230px;
     }
 
     .grupo-final button {
       position: relative;
       padding: 6px 20px;
       font-size: 14px;
-      top: -110px;
+      top: -440px;
     }
   }
 
@@ -407,31 +379,28 @@ body {
   //tela debaixo com fundo cinza
 
   .tela-inicial {
-    margin-top: 120px;
-    height: 10vh;
-
 
     .texto-entrada {
       h1 {
-        margin-top: 50px;
+        position: relative;
+        top: -550px;
         font-size: 24px;
       }
 
       p {
         font-size: 13px;
+        position: relative;
+        top: -550px;
+
       }
     }
 
     .button-tela-inicial button {
       position: relative;
-      top: -260px;
-      width: 260px;
-      height: 65px;
+      top: -560px;
+      width: 160px;
+      height: 45px;
       font-size: 16px;
-    }
-
-    .imagen-inicio img {
-      top: -450px;
     }
   }
 
